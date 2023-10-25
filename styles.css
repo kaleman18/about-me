@@ -4,11 +4,15 @@ section {
 
 header {
     background-color: lightgreen;
-    background: radius 20px;
-    color: darkgrey
+    border-radius: 25px;
+    text-align: center;
 }
 
 main {
     background-color: linen;
 }
 
+
+img {
+    float: inline-start;
+}
