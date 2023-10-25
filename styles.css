@@ -1,0 +1,14 @@
+section {
+    border: 1px solid black;
+}
+
+header {
+    background-color: lightgreen;
+    background: radius 20px;
+    color: darkgrey
+}
+
+main {
+    background-color: linen;
+}
+
