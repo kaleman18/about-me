@@ -1,15 +1,39 @@
 let pointsScored = 0;
-function askName(){
-    let userName = prompt('Hello! What is your name?');
-            document.write('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
-}
 
-function askQuestions(){
-    let usrQuestion = prompt("Would you like to answer a couple of yes or no questions about me?");
-    let letter = usrQuestion.substring(0,1);
-    if(usrQuestion === 'y')
-        alert('okay!')
-}
+let userName = prompt('Hello! What is your name?');
+     document.write('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
+
+
+
+let usrQuestion = prompt("Would you like to answer a couple of yes or no questions about me?");
+
+let letter = usrQuestion.substring(0,1);
+    if(usrQuestion === 'y'){
+        pointsScored++;
+        alert('Okay!');
+    } else(usrQuestion ==='n'){
+        alert("oh, okay. I see how it is.")
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function sixthQuestion(){
     let correctGuess = false;
@@ -67,7 +91,7 @@ function seventhQuestion(){
         }
 }
 
-askName()
+
 sixthQuestion()
 seventhQuestion()
 
