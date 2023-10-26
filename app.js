@@ -1,19 +1,50 @@
 let pointsScored = 0;
 
-let userName = prompt('Hello! What is your name?');
-     document.write('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
 
 
-
-let usrQuestion = prompt("Would you like to answer a couple of yes or no questions about me?");
-
-let letter = usrQuestion.substring(0,1);
-    if(usrQuestion === 'y'){
+function checkYesNo(question, correctAnswer){
+    let userAnswer = prompt(question);
+    let normalilzedAnswer = userAnswer.toLowerCase();
+  
+    if (normalilzedAnswer.startsWith('y') && correctAnswer === 'yes'){
         pointsScored++;
-        alert('Okay!');
-    } else(usrQuestion ==='n'){
-        alert("oh, okay. I see how it is.")
+      return true;
+    } else if (normalilzedAnswer.startsWith('n')&& correctAnswer === 'no'){
+        pointsScored++;
+      return true;
+    } else {
+      alert('Sorry, that was incorrect');
+      return false;
     }
+  }
+
+function greeting(){
+    let userName = prompt('Hello! What is your name?');
+         document.write('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
+
+}
+
+greeting();
+
+if (checkYesNo('Would you like to answer a couple of yes or no questions about me?', 'yes')){
+    alert(`Okay! Lets go!`)
+}
+
+if (checkYesNo(`Did I serve in the Navy?`, `yes`)){
+    alert('Correct!')
+}
+
+if (checkYesNo(`Do I have a cat named Daisey?`, `yes`)){
+    alert(`Right!, She's a good girl...sometimes`)
+}
+if (checkYesNo(`Is my favorite food pasta?`, `no`)){
+    alert(`Eww gross`)
+}
+if (checkYesNo(`Do I work in the ER`, `yes`)){
+    alert('Correct!')
+}
+
+
 
     
 
