@@ -1,10 +1,48 @@
-section {
+/* section {
     border: 1px solid black;
+} */
+
+h1 {
+    margin-top: 10px;
+    font-size: 25px;
 }
+
+h3{
+    font-size: x-large;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+p{
+    padding: 30px;
+    font-size: larger;
+}
+
+.jobs {
+    display: inline-block;
+    /* margin-left: 160px; */
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-top: 150px;
+    font-size: larger;
+}
+
+.hobbies {
+    display: inline-block;
+    /* margin-left: 60px; */
+    
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    font-size: larger;
+}
+
 
 header {
     height: 50px;
-    background-color: lightgreen;
+    background-color:rgb(14, 190, 14);
     text-align: center;
     position: fixed;
     top: 0;
@@ -14,12 +52,19 @@ header {
 
 main {
     margin: 10px auto;
+    margin-top: 60px;
     max-width: 960px;
 }
 body {
     background-color: linen;
 }
-
-/* img {
-    
-} */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: larger;
+}
+img {
+   width: 600px; 
+   border-radius: 30px;
+   margin-left: 160px;
+}

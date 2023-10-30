@@ -19,7 +19,7 @@ function checkYesNo(question, correctAnswer){
 
 function greeting(){
   let userName = prompt('Hello! What is your name?');
-  document.write('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
+  alert('Hello, '+ userName +'. Welcome to my "about me" website. I hope you enjoy!');
 
 }
 greeting();
